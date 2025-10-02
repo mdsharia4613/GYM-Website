@@ -41,7 +41,7 @@ The design is made fully Responsive so it looks perfect on mobile, tablet, and d
 ---
 
 ## 🔗 Live Demo
-[Live Website Link](https://mdsharia4613.github.io/GYM-Website/)  
+* [Live Website Link](https://mdsharia4613.github.io/GYM-Website/)  
 
 ---
 
