@@ -38,19 +38,12 @@
             background-position: center;
             background-repeat: no-repeat;
         }
-
-        .shadow-img {
-            background-image: url('./images/roated_banner.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
     </style>
 </head>
 
-<body class="">
-    <header class="relative">
-        <nav class="flex lg:flex-row justify-between items-center pt-4 pb-20  py-2 px-7 bg-[#000000] ">
+<body class="bg-[#000000]">
+    <header class="container mx-auto relative">
+        <nav class=" flex lg:flex-row justify-between items-center pt-4  lg:pb-20  py-2 px-7 ">
             <div>
                 <div class="flex items-center gap-5">
                     <img src="./images/logo_left.png" alt="">
@@ -80,7 +73,7 @@
         <div
             class=" bg-img max-w-xl md:max-w-5xl lg:max-w-full  min-h-[500px] md:min-h-[600px] pt-20 px-2  md:px-8 lg:px-24 ">
             <div
-                class="max-w-xs md:max-w-[400px] md:mt-7 space-y-3 md:space-y-6 bg-gradient-to-b from-[#3939393F] to-[#0000003f] p-2 md:p-6 lg:px-8">
+                class="max-w-72 md:max-w-[400px]  md:mt-5 space-y-3 md:space-y-6 bg-gradient-to-b from-[#3939393F] to-[#0000003f] p-2 md:p-6 lg:px-8">
                 <h1 class="font-heading  text-4xl  lg:text-6xl text-white ">Transform Your Body </h1>
                 <p class="text-[#FFFFFF] text-xs mt-5 ">We are dedicated to helping you transform your body and mind
                     through
@@ -93,98 +86,136 @@
                 </div>
             </div>
 
+            <div class="ml-28 md:ml-16 lg:ml-6">
+                <div
+                    class="absolute  top-full  -translate-x-1/2 -translate-y-1/2 z-20 rounded-br-[80px]  bg-gradient-to-r from-[#F66844] to-[#FF8C42] px-6 py-4 flex items-center gap-6 w-60 h-14">
+                    <a href="#" class="text-white text-xl hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+                    <a href="#" class="text-white text-xl hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-white text-xl hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-        <!-- icone-section -->
-        <div
-            class="border absolute -translate-y-7   rounded-br-[80px]  bg-gradient-to-r from-[#F66844] to-[#FF8C42] px-6 py-4 flex items-center gap-6 w-60 h-14">
-            <a href="#" class="text-white text-xl hover:scale-110 transition-transform">
-                <i class="fa-brands fa-google"></i>
-            </a>
-            <a href="#" class="text-white text-xl hover:scale-110 transition-transform">
-                <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#" class="text-white text-xl hover:scale-110 transition-transform">
-                <i class="fa-brands fa-youtube"></i>
-            </a>
-        </div>
+
+
     </header>
     <main class="bg-[#000000] text-white">
+
         <!-- section-1 -->
-        <section id="home" class=" pt-10 pb-10 w-full max-w-7xl mx-auto px-5 md:px-8 lg:px-16">
-            <div class="shadow-img pt-5 pl-5">
-                <div class="">
-                    <h2 class="text-white text-3xl font-heading">Fitness Plant & <span
-                            class="text-orange-500">Nutrition</span></h2>
+        <section id="home" class="relative  pt-10 pb-10 w-full max-w-7xl mx-auto px-5 md:px-5 lg:px-16 overflow-hidden">
+
+            <!-- Background Image (rotated) -->
+            <div class="absolute inset-0 before:content-[''] before:absolute before:inset-0 
+                before:bg-[url('./images/roated_banner.png')] 
+                before:bg-cover before:bg-center before:bg-no-repeat 
+                before:rotate-180 
+                after:content-[''] after:absolute after:inset-0 
+                after:bg-black/60 z-0 mt-20 "></div>
+
+            <!-- Content -->
+            <div class="relative z-10 pt-10 pb-5">
+                <h2 class="text-white text-3xl font-heading font-semibold">
+                    Fitness Plans & <span class="text-orange-500">Nutritions</span>
+                </h2>
+            </div>
+
+            <div
+                class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center pt-5 pl-6 gap-6 z-10">
+
+                <!-- 1 -->
+                <div class="space-y-4 text-center py-7">
+                    <div class="flex justify-center">
+                        <img class="filter invert" src="./images/man (2).png" alt="">
+                    </div>
+                    <p class="text-white text-sm font-semibold">Weight Loss</p>
+                    <p class="text-xs text-gray-400 w-80 mx-auto">
+                        Weight loss can have causes that aren't due to underlying disease.
+                        Examples include dieting, exercise, malnutrition or lack of access to food.
+                    </p>
                 </div>
-                <div
-                    class=" relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center pt-5 pl-6 gap-6">
-                    <div class="space-y-4  text-center  py-7 ">
-                        <div class="flex justify-center">
-                            <img class="filter invert" src="./images/man (2).png" alt="">
-                        </div>
-                        <p class="text-white text-sm font-semibold">Weight Loss</p>
-                        <p class="text-xs text-gray-400 w-80  mx-auto">Weight loss can have causes that aren't due to
-                            underlying disease. Examples include dieting, exercise, malnutrition or lack of access to
-                            food.
-                        </p>
-                    </div>
-                    <div class="space-y-4   text-center border-b-orange-400 py-7">
-                        <div class="flex justify-center">
-                            <img class="filter invert" src="./images/yoga (1).png" alt="">
-                        </div>
-                        <p class="text-white text-sm font-semibold">Classic Yoga</p>
-                        <p class="text-xs text-gray-400 w-80  mx-auto">The term "yoga" in the Western world often
-                            denotes a modern form of Hatha yoga and a posture-based physical fitness, stress-relief.
-                        </p>
-                    </div>
 
-                    <div class="space-y-4  text-center py-7">
-                        <div class="flex justify-center ">
-                            <img class="filter invert" src="./images/bicycle.png" alt="">
-                        </div>
-                        <p class="text-white text-sm font-semibold">Cycling</p>
-                        <p class="text-xs text-gray-400 w-80  mx-auto">Cycling, also, when on a two-wheeled bicycle,
-                            called bicycling or biking, is the use of cycles for transport, recreation, exercise or
-                            sport.
-                        </p>
+                <!-- 2 -->
+                <div class="space-y-4 text-center py-7">
+                    <div class="flex justify-center">
+                        <img class="filter invert" src="./images/yoga (1).png" alt="">
                     </div>
-
-                    <div class="space-y-4   text-center  py-7 h-full">
-                        <div class="flex justify-center ">
-                            <img class="filter invert" src="./images/gym.png" alt="">
-                        </div>
-                        <p class="text-white text-sm font-semibold">Body Building</p>
-                        <p class="text-xs text-gray-400 w-80  mx-auto">Bodybuilding is the use of progressive resistance
-                            exercise to control and develop one's muscles by muscle hypertrophy for aesthetic purposes.
-                        </p>
-                    </div>
-                    <div class="space-y-4   text-center py-7">
-                        <i class="fa-solid fa-dumbbell text-4xl text-white"></i>
-
-                        <p class="text-white text-sm font-semibold">Musculation</p>
-                        <p class="text-xs text-gray-400 w-80  mx-auto">Weight training is a common type of strength
-                            training for developing the strength, size of skeletal muscles and maintenance of strength.
-                        </p>
-                    </div>
-                    <div class="space-y-4   text-center  py-7">
-                        <i class="fa-solid fa-person-running text-4xl text-white"></i>
-
-                        <p class="text-white text-sm font-semibold">Fitness Running</p>
-                        <p class="text-xs text-gray-400 w-80  mx-auto">Running is a method of terrestrial locomotion
-                            allowing humans and other animals to move rapidly on foot.
-                        </p>
-                    </div>
-
-                    <!-- Divider Lines -->
-                    <div class="absolute top-1/2 left-0 w-full h-[1px] bg-yellow-500"></div>
-                    <div class="absolute top-0 left-1/3 w-[1px] h-full bg-yellow-500"></div>
-                    <div class="absolute top-0 left-2/3 w-[1px] h-full bg-yellow-500"></div>
-
+                    <p class="text-white text-sm font-semibold">Classic Yoga</p>
+                    <p class="text-xs text-gray-400 w-80 mx-auto">
+                        The term "yoga" in the Western world often denotes a modern form of
+                        Hatha yoga and a posture-based physical fitness, stress-relief.
+                    </p>
                 </div>
+
+                <!-- 3 -->
+                <div class="space-y-4 text-center py-7">
+                    <div class="flex justify-center">
+                        <img class="filter invert" src="./images/bicycle.png" alt="">
+                    </div>
+                    <p class="text-white text-sm font-semibold">Cycling</p>
+                    <p class="text-xs text-gray-400 w-80 mx-auto">
+                        Cycling, also, when on a two-wheeled bicycle, called bicycling or biking,
+                        is the use of cycles for transport, recreation, exercise or sport.
+                    </p>
+                </div>
+
+                <!-- 4 -->
+                <div class="space-y-4 text-center py-7">
+                    <div class="flex justify-center">
+                        <img class="filter invert" src="./images/gym.png" alt="">
+                    </div>
+                    <p class="text-white text-sm font-semibold">Body Building</p>
+                    <p class="text-xs text-gray-400 w-80 mx-auto">
+                        Bodybuilding is the use of progressive resistance exercise to control
+                        and develop one's muscles by muscle hypertrophy for aesthetic purposes.
+                    </p>
+                </div>
+
+                <!-- 5 -->
+                <div class="space-y-4 text-center py-7">
+                    <i class="fa-solid fa-dumbbell text-4xl text-white"></i>
+                    <p class="text-white text-sm font-semibold">Musculation</p>
+                    <p class="text-xs text-gray-400 w-80 mx-auto">
+                        Weight training is a common type of strength training for developing
+                        the strength, size of skeletal muscles and maintenance of strength.
+                    </p>
+                </div>
+
+                <!-- 6 -->
+                <div class="space-y-4 text-center py-7">
+                    <i class="fa-solid fa-person-running text-4xl text-white"></i>
+                    <p class="text-white text-sm font-semibold">Fitness Running</p>
+                    <p class="text-xs text-gray-400 w-80 mx-auto">
+                        Running is a method of terrestrial locomotion allowing humans
+                        and other animals to move rapidly on foot.
+                    </p>
+                </div>
+
+                <!-- divider line -->
+                <!-- Horizontal lines for md -->
+                <div class="hidden md:block lg:hidden absolute top-1/3 left-0 w-full h-[1px] bg-yellow-500 z-10"></div>
+                <div class="hidden md:block lg:hidden absolute top-2/3 left-0 w-full h-[1px] bg-yellow-500 z-10"></div>
+
+                <!-- Vertical line for md -->
+                <div class="hidden md:block lg:hidden absolute top-0 left-1/2 w-[1px] h-full bg-yellow-500 z-10"></div>
+
+                <!-- Horizontal line for lg -->
+                <div class="hidden lg:block absolute top-1/2 left-0 w-full h-[1px] bg-yellow-500 z-10"></div>
+
+                <!-- Vertical lines for lg -->
+                <div class="hidden lg:block absolute top-0 left-1/3 w-[1px] h-full bg-yellow-500 z-10"></div>
+                <div class="hidden lg:block absolute top-0 left-2/3 w-[1px] h-full bg-yellow-500 z-10"></div>
+
+            </div>
         </section>
 
+
         <!-- section-2 -->
-        <section id="service" class="  py-8 w-10/12 mx-auto">
+        <section id="service" class="container py-8 w-10/12 mx-auto">
             <div class="">
                 <h2 class="text-4xl md:text-center lg:text-left">
                     Subscribe To <span class="text-[#FF921B]">Plans</span>
@@ -193,7 +224,7 @@
             <!-- card-item -->
             <div class="flex flex-col lg:flex-row justify-between items-center gap-10 w-9/12 mx-auto mt-8">
                 <div
-                    class="bg-gradient-to-b from-[#0e0e0e] to-[#020202] w-64 text-center py-6 space-y-4 hover:shadow-lg  hover:shadow-orange-600 hover:border hover:border-yellow-500 rounded-xl transition duration-300 ease-in-out">
+                    class="bg-gradient-to-b from-[#0e0e0e] to-[#020202] w-64 h-72 text-center py-6 space-y-4 hover:shadow-lg  hover:shadow-orange-600 hover:border hover:border-yellow-500 rounded-xl transition duration-300 ease-in-out">
                     <h3 class="text-xl font-heading font-semibold">Fit</h3>
                     <p class="text-sm text-gray-600">Plan Exp. 16/11/2024</p>
                     <p class="text-xl font-semibold">$1000/ <span class="text-xs text-gray-600">Month</span></p>
@@ -203,7 +234,7 @@
                         type="button">Slect Plane</button>
                 </div>
                 <div
-                    class="bg-gradient-to-b from-[#0e0e0e] to-[#020202] w-64 text-center py-6 space-y-4 hover:shadow-lg hover:shadow-orange-600 hover:border hover:border-yellow-500 rounded-xl transition duration-300 ease-in-out lg:mb-24 relative">
+                    class="bg-gradient-to-b from-[#0e0e0e] to-[#020202] w-64 h-72 text-center py-6 space-y-4 hover:shadow-lg hover:shadow-orange-600 hover:border hover:border-yellow-500 rounded-xl transition duration-300 ease-in-out lg:mb-24 relative">
                     <h3 class="text-xl font-heading font-semibold">Fit</h3>
                     <p class="text-sm text-gray-600">Plan Exp. 16/11/2024</p>
                     <p class="text-xl font-semibold">$1500/ <span class="text-xs text-gray-600">Month</span></p>
@@ -211,12 +242,12 @@
                     <button
                         class=" border border-yellow-600 py-1 px-3 text- xl cursor-pointer hover:bg-gradient-to-r from-[#F66844] to-[#FF921B]"
                         type="button">Slect Plane</button>
-                    <div class="absolute bottom-61 left-20">
+                    <div class="absolute transform -translate-y-[250px] left-20">
                         <button class="bg-white text-gray-600 p-1 text-xs" type="button">Recommended</button>
                     </div>
                 </div>
                 <div
-                    class="bg-gradient-to-b from-[#0e0e0e] to-[#020202] w-64 text-center py-6 space-y-4 hover:shadow-lg hover:shadow-orange-600 hover:border hover:border-yellow-500 rounded-xl transition duration-300 ease-in-out">
+                    class="bg-gradient-to-b from-[#0e0e0e] to-[#020202] w-64 h-72 text-center py-6 space-y-4 hover:shadow-lg hover:shadow-orange-600 hover:border hover:border-yellow-500 rounded-xl transition duration-300 ease-in-out">
                     <h3 class="text-xl font-heading font-semibold">Fit</h3>
                     <p class="text-sm text-gray-600">Plan Exp. 16/11/2024</p>
                     <p class="text-xl font-semibold">$1200/ <span class="text-xs text-gray-600">Month</span></p>
@@ -230,7 +261,7 @@
 
         <!-- section-3 -->
 
-        <section id="about" class=" w-10/12 mx-auto py-7 ">
+        <section id="about" class="container w-10/12 mx-auto py-7 ">
             <h2 class="font-heading text-3xl md:text-center lg:text-left mt-10">Join Our <span
                     class="text-[#FF921B]">Trainer</span></h2>
             <div class="flex flex-col lg:flex-row justify-between items-center gap-5 w-9/12 mx-auto mt-8">
@@ -248,7 +279,7 @@
 
         <!-- section-4 -->
 
-        <section class="w-10/12 mx-auto py-10">
+        <section class="container w-10/12 mx-auto py-10">
             <h2 class="font-heading text-3xl md:text-center lg:text-left mt-10">Why Join With <span
                     class="text-[#FF921B]">Us?</span></h2>
 
@@ -281,96 +312,99 @@
                 </div>
         </section>
     </main>
-    <footer id="contacts" class="bg-[#101010] text-white font-heading">
-        <div
-            class="w-10/12 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 items-start gap-x-10 gap-y-9 font-heading py-10 ">
-            <!-- colum-1 -->
-            <div class="">
-                <div class="flex items-center gap-3 ">
-                    <img class="w-6 h-5" src="./images/logo_left.png" alt="">
-                    <h3
-                        class="font-heading bg-gradient-to-r from-[#F66844] to-[#321c0a] bg-clip-text text-transparent text-xl text-center lg:text-left">
-                        Bodyshap</h3>
+    <footer id="contacts" class=" bg-[#101010] text-white font-heading">
+        <div class="container mx-auto">
+            <div
+                class="w-10/12 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 items-start gap-x-10 gap-y-9 font-heading py-10 ">
+                <!-- colum-1 -->
+                <div class="">
+                    <div class="flex items-center gap-3 ">
+                        <img class="w-6 h-5" src="./images/logo_left.png" alt="">
+                        <h3
+                            class="font-heading bg-gradient-to-r from-[#F66844] to-[#321c0a] bg-clip-text text-transparent text-xl text-center lg:text-left">
+                            Bodyshap</h3>
 
-                    <img class="w-6 h-5" src="./images/logo_right.png" alt="">
-                </div>
-                <p
-                    class="font-heading bg-gradient-to-r from-[#F66844] to-[#150a02] bg-clip-text text-transparent text-sm ml-8">
-                    Unleash your inner athlete</p>
-                <p class="text-sm text-white mt-5 font-semibold">Support Your Need To
-                    Much Fitness Goal</p>
-
-            </div>
-            <!-- colum-2 -->
-            <div class="">
-                <h2 class="text-sm font-semibold font-heading mb-5">Company</h2>
-                <div class="flex flex-col gap-y-2">
-                    <a class="text-xs text-gray-600 w-fit relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-[#F66844] after:to-[#FF921B] after:transition-all after:duration-300 hover:after:w-full hover:text-orange-600"
-                        href="">About</a>
-                    <a class="text-xs text-gray-600 w-fit relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-[#F66844] after:to-[#FF921B] after:transition-all after:duration-300 hover:after:w-full hover:text-orange-600"
-                        href="">Careers</a>
-                    <a class="text-xs text-gray-600 w-fit relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-[#F66844] after:to-[#FF921B] after:transition-all after:duration-300 hover:after:w-full hover:text-orange-600"
-                        href="">Blog</a>
-                </div>
-            </div>
-            <!-- colum-3 -->
-            <div>
-                <h2 class="text-sm font-semibold font-heading mb-5">Contact</h2>
-                <div class="flex flex-col gap-y-2">
-                    <a class="text-gray-600 text-xs relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-[#F66844] after:to-[#FF921B] after:transition-all after:duration-300 hover:after:w-full hover:text-orange-600 w-fit"
-                        href="">Help/FAQ</a>
-                    <a class="text-gray-600 text-xs relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-[#F66844] after:to-[#FF921B] after:transition-all after:duration-300 hover:after:w-full hover:text-orange-600 w-fit"
-                        href="">Press</a>
-                </div>
-            </div>
-            <!-- colum-4 -->
-            <div>
-                <h2 class="text-sm font-semibold font-heading mb-5 ">More</h2>
-                <div class="flex flex-col space-y-2">
-                    <a class="text-xs text-gray-600 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-[#F66844] after:to-[#FF921B] after:transition-all after:duration-300 hover:after:w-full hover:text-orange-600 w-fit"
-                        href="">Program</a>
-                    <a class="text-xs text-gray-600 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-[#F66844] after:to-[#FF921B] after:transition-all after:duration-300 hover:after:w-full hover:text-orange-600 w-fit"
-                        href="">Plan</a>
-                    <a class="text-xs text-gray-600 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-[#F66844] after:to-[#FF921B] after:transition-all after:duration-300 hover:after:w-full hover:text-orange-600 w-fit"
-                        href="">method</a>
-                </div>
-            </div>
-            <div class="">
-                <h2 class="text-sm font-semibold mb-5 font-heading">Popular Tags</h2>
-                <div class="grid grid-cols-2  lg:grid-cols-3 gap-2 ">
-                    <button
-                        class="bg-gray-600 text-xs py-1 px-3 rounded hover:bg-gradient-to-r from-[#F66844] to-[#FF921B]  transition cursor-pointer"
-                        type="button">Abs</button>
-                    <button
-                        class="bg-gray-600 text-xs py-1 px-3 rounded hover:bg-gradient-to-r from-[#F66844] to-[#FF921B]  transition cursor-pointer"
-                        type="button">Workout</button>
-                    <button
-                        class="bg-gray-600 text-xs py-1 px-3 rounded hover:bg-gradient-to-r from-[#F66844] to-[#FF921B]  transition cursor-pointer"
-                        type="button">Nutrition</button>
-                    <button
-                        class="bg-gray-600 text-xs py-1 px-3 rounded hover:bg-gradient-to-r from-[#F66844] to-[#FF921B]  transition cursor-pointer"
-                        type="button">Boxing</button>
-                    <button
-                        class="bg-gray-600 text-xs py-1 px-3 rounded hover:bg-gradient-to-r from-[#F66844] to-[#FF921B]  transition cursor-pointer"
-                        type=" button">Gym</button>
-                    <button class="bg-gradient-to-r from-[#F66844] to-[#FF921B] text-xs py-1 px-3"
-                        type="button">Facilities</button>
-                    <button
-                        class="bg-gray-600 text-xs py-1 px-3 hover:bg-gradient-to-r from-[#F66844] to-[#FF921B] cursor-pointer rounded transition"
-                        type=" button">Plants</button>
-                    <button
-                        class="bg-gray-600 text-xs py-1 px-3 hover:bg-gradient-to-r from-[#F66844] to-[#FF921B] cursor-pointer rounded "
-                        type=" button">Trainers</button>
+                        <img class="w-6 h-5" src="./images/logo_right.png" alt="">
+                    </div>
+                    <p
+                        class="font-heading bg-gradient-to-r from-[#F66844] to-[#150a02] bg-clip-text text-transparent text-sm ml-8">
+                        Unleash your inner athlete</p>
+                    <p class="text-sm text-white mt-5 font-semibold">Support Your Need To
+                        Much Fitness Goal</p>
 
                 </div>
+                <!-- colum-2 -->
+                <div class="">
+                    <h2 class="text-sm font-semibold font-heading mb-5">Company</h2>
+                    <div class="flex flex-col gap-y-2">
+                        <a class="text-xs text-gray-600 w-fit relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-[#F66844] after:to-[#FF921B] after:transition-all after:duration-300 hover:after:w-full hover:text-orange-600"
+                            href="">About</a>
+                        <a class="text-xs text-gray-600 w-fit relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-[#F66844] after:to-[#FF921B] after:transition-all after:duration-300 hover:after:w-full hover:text-orange-600"
+                            href="">Careers</a>
+                        <a class="text-xs text-gray-600 w-fit relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-[#F66844] after:to-[#FF921B] after:transition-all after:duration-300 hover:after:w-full hover:text-orange-600"
+                            href="">Blog</a>
+                    </div>
+                </div>
+                <!-- colum-3 -->
+                <div>
+                    <h2 class="text-sm font-semibold font-heading mb-5">Contact</h2>
+                    <div class="flex flex-col gap-y-2">
+                        <a class="text-gray-600 text-xs relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-[#F66844] after:to-[#FF921B] after:transition-all after:duration-300 hover:after:w-full hover:text-orange-600 w-fit"
+                            href="">Help/FAQ</a>
+                        <a class="text-gray-600 text-xs relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-[#F66844] after:to-[#FF921B] after:transition-all after:duration-300 hover:after:w-full hover:text-orange-600 w-fit"
+                            href="">Press</a>
+                    </div>
+                </div>
+                <!-- colum-4 -->
+                <div>
+                    <h2 class="text-sm font-semibold font-heading mb-5 ">More</h2>
+                    <div class="flex flex-col space-y-2">
+                        <a class="text-xs text-gray-600 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-[#F66844] after:to-[#FF921B] after:transition-all after:duration-300 hover:after:w-full hover:text-orange-600 w-fit"
+                            href="">Program</a>
+                        <a class="text-xs text-gray-600 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-[#F66844] after:to-[#FF921B] after:transition-all after:duration-300 hover:after:w-full hover:text-orange-600 w-fit"
+                            href="">Plan</a>
+                        <a class="text-xs text-gray-600 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-[#F66844] after:to-[#FF921B] after:transition-all after:duration-300 hover:after:w-full hover:text-orange-600 w-fit"
+                            href="">method</a>
+                    </div>
+                </div>
+                <div class="">
+                    <h2 class="text-sm font-semibold mb-5 font-heading">Popular Tags</h2>
+                    <div class="grid grid-cols-2  lg:grid-cols-3 gap-2 ">
+                        <button
+                            class="bg-gray-600 text-xs py-1 px-3 rounded hover:bg-gradient-to-r from-[#F66844] to-[#FF921B]  transition cursor-pointer"
+                            type="button">Abs</button>
+                        <button
+                            class="bg-gray-600 text-xs py-1 px-3 rounded hover:bg-gradient-to-r from-[#F66844] to-[#FF921B]  transition cursor-pointer"
+                            type="button">Workout</button>
+                        <button
+                            class="bg-gray-600 text-xs py-1 px-3 rounded hover:bg-gradient-to-r from-[#F66844] to-[#FF921B]  transition cursor-pointer"
+                            type="button">Nutrition</button>
+                        <button
+                            class="bg-gray-600 text-xs py-1 px-3 rounded hover:bg-gradient-to-r from-[#F66844] to-[#FF921B]  transition cursor-pointer"
+                            type="button">Boxing</button>
+                        <button
+                            class="bg-gray-600 text-xs py-1 px-3 rounded hover:bg-gradient-to-r from-[#F66844] to-[#FF921B]  transition cursor-pointer"
+                            type=" button">Gym</button>
+                        <button class="bg-gradient-to-r from-[#F66844] to-[#FF921B] text-xs py-1 px-3"
+                            type="button">Facilities</button>
+                        <button
+                            class="bg-gray-600 text-xs py-1 px-3 hover:bg-gradient-to-r from-[#F66844] to-[#FF921B] cursor-pointer rounded transition"
+                            type=" button">Plants</button>
+                        <button
+                            class="bg-gray-600 text-xs py-1 px-3 hover:bg-gradient-to-r from-[#F66844] to-[#FF921B] cursor-pointer rounded "
+                            type=" button">Trainers</button>
+
+                    </div>
+                </div>
             </div>
+
+            <div class="bg-[#ff921b] h-12 mr-4 flex items-center justify-center">
+                <h2 class="text-white  text-center text-sm font-normal"><i class="fa-solid fa-copyright"></i> 2023 All
+                    Right
+                    reserved</h2>
+            </div>
+
         </div>
-
-        <div class="bg-[#ff921b] h-12 mr-4 flex items-center justify-center">
-            <h2 class="text-white  text-center text-sm font-normal"><i class="fa-solid fa-copyright"></i> 2023 All Right
-                reserved</h2>
-        </div>
-
     </footer>
 </body>
 
